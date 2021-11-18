@@ -6,15 +6,20 @@ const ProductTag = require('./ProductTag');
 
 
 // Products belongsTo Category
-Products.belongsTo(Category);
+Product.belongsTo(Category,{
+  onDelete: 'SET NULL'
+});
 // Categories have many Products
-Category.hasMany(Products);
+Category.hasMany(Product,{
+  onDelete: 'SET NULL'
+});
 // Products belongToMany Tags (through ProductTag)
-Products.belongsToMany(Tag, { through: ProductTag,})
+Product.belongsToMany(Tag, { through: ProductTag,
+  onDelete: 'SET NULL'})
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product,  {
   through: ProductTag,
- 
+  onDelete: 'SET NULL'
 });
 
 ProductTag.belongsTo (Product);
