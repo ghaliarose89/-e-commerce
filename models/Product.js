@@ -39,7 +39,6 @@ Product.init(
         key:'id'
       }
     },
-
     
     product_name: {
       type:DataTypes.STRING,
