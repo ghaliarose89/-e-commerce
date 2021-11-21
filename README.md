@@ -30,7 +30,7 @@ After installing npm and running the Server, Open Insomnia and write the routes:
 /api/tags to access all tags
 like the following snip:
 
-![snip](assets/snip.JPG)
+![snip](assets/snip.jpg)
 
 ### Contribution:
 Made with ❤️️ by Ghalia Sami. 
