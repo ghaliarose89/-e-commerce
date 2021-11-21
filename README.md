@@ -21,7 +21,7 @@ THEN I am able to successfully create, update, and delete data in my database
 ## instructions: 
 
 * Install the npm package , then enter 'node server' OR
-* visit the walk throw video (https://youtu.be/dI9h_WXMxbE)
+* visit the walk throw video (https://youtu.be/PlBZHazHjdo)
 
 ## Usage:
 After installing npm and running the Server, Open Insomnia and write the routes:
