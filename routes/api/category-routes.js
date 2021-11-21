@@ -62,7 +62,7 @@ router.post('/', (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// update a Category
 router.put('/:id', (req, res) => {
   Category.update({
     category_name: req.body.category_name
@@ -86,7 +86,7 @@ router.put('/:id', (req, res) => {
     res.status(500).json(err);
   });
 });
-
+// delete category by ID
 router.delete('/:id', (req, res) => {
   Category.destroy({
     where: {

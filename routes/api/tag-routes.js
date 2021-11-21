@@ -19,6 +19,7 @@ router.get('/', (req, res) => {
     });
 })
 
+// get a tag by id
 router.get('/:id', (req, res) => {
   Tag.findOne({
     where:
@@ -41,7 +42,7 @@ router.get('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// post a tag
 router.post('/', (req, res) => {
   Tag.create({
     id: req.body.id,
@@ -53,7 +54,7 @@ router.post('/', (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// update a tag
 router.put('/:id', (req, res) => {
   Tag.update({
     tag_name: req.body.tag_name,
@@ -77,7 +78,7 @@ router.put('/:id', (req, res) => {
     res.status(500).json(err);
   });
 });
-
+//delete a tag
 router.delete('/:id', (req, res) => {
   Tag.destroy({
     where: {
