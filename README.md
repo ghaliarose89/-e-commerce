@@ -26,8 +26,9 @@ THEN I am able to successfully create, update, and delete data in my database
 ## Usage:
 After installing npm and running the Server, Open Insomnia and write the routes:
 /api/categories to access all categories
-/api/products to access all categories
-/api/tags to access all categories
+/api/products to access all products
+/api/tags to access all tags
+like the following snip:
 
 ![snip](assets/snip.JPG)
 
